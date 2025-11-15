@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mini Boutique PWA</title>
-<link rel="stylesheet" href="style.css">
-<link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Boutique PWA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-<h1>Bienvenue à la Mini Boutique</h1>
-<div id="products">
-<div class="product">
-<h2>Produit 1</h2>
-<p>Prix: 10€</p>
-<button onclick="addToCart('Produit 1')">Ajouter au panier</button>
-</div>
-<div class="product">
-<h2>Produit 2</h2>
-<p>Prix: 15€</p>
-<button onclick="addToCart('Produit 2')">Ajouter au panier</button>
-</div>
-</div>
-<script src="app.js"></script>
+
+  <!-- Header style boutique -->
+  <header>
+    <h1>Mini Boutique</h1>
+    <div>
+      <button>Panier 🛒</button>
+    </div>
+  </header>
+
+  <!-- Section produits -->
+  <div id="products">
+    <div class="product">
+      <img src="produit1.jpg" alt="Robe été">
+      <h2>Robe été</h2>
+      <p>Prix: 25€</p>
+      <button onclick="addToCart('Robe été')">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+      <img src="produit2.jpg" alt="T-shirt mode">
+      <h2>T-shirt mode</h2>
+      <p>Prix: 15€</p>
+      <button onclick="addToCart('T-shirt mode')">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+      <img src="produit3.jpg" alt="Sac tendance">
+      <h2>Sac tendance</h2>
+      <p>Prix: 30€</p>
+      <button onclick="addToCart('Sac tendance')">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+      <img src="produit4.jpg" alt="Chaussures">
+      <h2>Chaussures</h2>
+      <p>Prix: 40€</p>
+      <button onclick="addToCart('Chaussures')">Ajouter au panier</button>
+    </div>
+  </div>
+
+  <!-- Script PWA -->
+  <script src="app.js"></script>
+
 </body>
 </html>
